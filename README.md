@@ -2,7 +2,8 @@
 I following the following guides to get me going on this, with 0 prior experience.
 
 1. [Setup Skeleton](https://www.skeleton.dev/docs/get-started)
-2. [Follow this Svelte guide to learn how it works](https://joshcollinsworth.com/blog/build-static-sveltekit-markdown-blog)
+2. [Follow this Svelte guide to learn how it works and also add markdown functionality](https://joshcollinsworth.com/blog/build-static-sveltekit-markdown-blog)
+3. [Next step, sort out styling my markdown with tailwind documentation](https://tailwindcss.com/docs/utility-first)
 
 Page isn't published using this framework yet.
 Still working on this so myu actual site isn't using this code yet. But soon I hope!
