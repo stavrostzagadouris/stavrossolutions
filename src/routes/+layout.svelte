@@ -10,6 +10,9 @@
 	import css from 'highlight.js/lib/languages/css';
 	import javascript from 'highlight.js/lib/languages/javascript';
 	import typescript from 'highlight.js/lib/languages/typescript';
+	// import the header file you have in lib components here but you need to 
+	// use it in the svelte fragment below 
+	import Header from '$lib/components/Header.svelte';
 
 	hljs.registerLanguage('xml', xml); // for HTML
 	hljs.registerLanguage('css', css);
@@ -21,7 +24,13 @@
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
 	import { storePopup } from '@skeletonlabs/skeleton';
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
+
+	
 </script>
+
+
+	
+
 
 <!-- App Shell -->
 <AppShell>
@@ -58,7 +67,10 @@
 				</a>
 			</svelte:fragment>
 		</AppBar>
+	<!-- after importing header, you need to say where you want to keep it -->
+	<Header />
 	</svelte:fragment>
 	<!-- Page Route Content -->
 	<slot />
+	<footer>Hello, I'm the footer.</footer>
 </AppShell>
