@@ -11,6 +11,7 @@
 	import javascript from 'highlight.js/lib/languages/javascript';
 	import typescript from 'highlight.js/lib/languages/typescript';
 	// import the header file you have in lib components here but you need to 
+	
 	// use it in the svelte fragment below 
 	import Header from '$lib/components/Header.svelte';
 
@@ -24,13 +25,8 @@
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
 	import { storePopup } from '@skeletonlabs/skeleton';
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
-
 	
 </script>
-
-
-	
-
 
 <!-- App Shell -->
 <AppShell>
@@ -71,6 +67,9 @@
 	<Header />
 	</svelte:fragment>
 	<!-- Page Route Content -->
-	<slot />
+	 <!-- putting each article in this div ensures markdown is rendered correctly -->
+	<div class="prose prose-lg prose-neutral prose-invert max-w-1000 mx-auto px-4 py-8">
+		<slot />
+	</div>
 	<footer>Hello, I'm the footer.</footer>
 </AppShell>
