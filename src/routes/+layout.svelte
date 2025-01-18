@@ -34,12 +34,20 @@
 		<!-- App Bar -->
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<strong class="text-xl uppercase">Skeleton</strong>
+				<strong class="text-xl">Stavros Solutions</strong>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
 				<a
 					class="btn btn-sm variant-ghost-surface"
-					href="https://discord.gg/EXqV7W8MtY"
+					href="https://github.com/jiberwabish/"
+					target="_blank"
+					rel="noreferrer"
+				>
+					GitHub
+				</a>
+				<a
+					class="btn btn-sm variant-ghost-surface"
+					href="https://discordapp.com/users/250087569520328724"
 					target="_blank"
 					rel="noreferrer"
 				>
@@ -47,19 +55,11 @@
 				</a>
 				<a
 					class="btn btn-sm variant-ghost-surface"
-					href="https://twitter.com/SkeletonUI"
+					href="https://www.linkedin.com/in/stavrostz/"
 					target="_blank"
 					rel="noreferrer"
 				>
-					Twitter
-				</a>
-				<a
-					class="btn btn-sm variant-ghost-surface"
-					href="https://github.com/skeletonlabs/skeleton"
-					target="_blank"
-					rel="noreferrer"
-				>
-					GitHub
+					LinkedIn
 				</a>
 			</svelte:fragment>
 		</AppBar>
@@ -67,9 +67,14 @@
 	<Header />
 	</svelte:fragment>
 	<!-- Page Route Content -->
-	 <!-- putting each article in this div ensures markdown is rendered correctly -->
+	<!-- putting each article in this div ensures markdown is rendered correctly -->
 	<div class="prose prose-lg prose-neutral prose-invert max-w-1000 mx-auto px-4 py-8">
 		<slot />
 	</div>
-	<footer>Hello, I'm the footer.</footer>
+	<footer>
+		<div class="container mx-auto flex justify-center items-center flex-col text-xs">
+			<p>_______</p>
+			<p><a href="https://github.com/jiberwabish/stavrossolutions">stavrossolutions.com</a></p>
+		</div>
+	</footer>
 </AppShell>
