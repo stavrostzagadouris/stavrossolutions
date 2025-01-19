@@ -1,15 +1,9 @@
 <!-- Header.svelte -->
 <header>
-	<a href="/">Home</a>
-
 	<nav>
-		<ul>
-			<li>
-				<a href="/about">About</a>
-			</li>
-            <li>
-                <a href="/contact">Contact</a>
-            </li>
-			</ul>
+		<a href="/">Home</a>
+		<a href="/articles">Articles</a>
+		<a href="/about">About</a>
 	</nav>
+
 </header>

@@ -1,0 +1,35 @@
+# Markdown Cheatsheet
+
+## Headers
+- `#` Header 1
+- `##` Header 2
+- `###` Header 3
+
+## Emphasis
+- `*italic*` or `_italic_`
+- `**bold**` or `__bold__`
+- `***bold italic***` or `___bold italic___`
+
+## Lists
+- Unordered list: `-`, `+`, or `*`
+    - Nested unordered list: `-`
+- Ordered list: `1.`
+    - Nested ordered list: `a.`
+
+## Links
+- `[link text](https://www.example.com)`
+
+## Images
+- `![alt text](image_url.jpg "title")`
+
+## Blockquotes
+- `> blockquote`
+    - `>> nested blockquote`
+
+## Code and Syntax Highlighting
+- Inline code: `` `code` ``
+- Block of code:
+    ```language
+    function example() {
+        console.log("Hello, world!");
+    }

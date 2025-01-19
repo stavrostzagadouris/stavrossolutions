@@ -22,8 +22,10 @@
 			<p>Then get a different kind of headache cringing so hard at my AI generated pictures that go with them. 🙅🖼️</p>
 		</div>
 		<div class="flex justify-center">
-			
-		</div>
+			<a href="/articles">
+				Articles
+			</a>
+		  </div>
 	</div>
 </div>
 
