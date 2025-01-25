@@ -34,9 +34,23 @@
 		<!-- App Bar -->
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<strong class="text-xl">Stavros Solutions</strong>
+				<strong class="ml-10 text-xl"><a href="/">Stavros Solutions</a></strong>
 			</svelte:fragment>
+			
 			<svelte:fragment slot="trail">
+			<nav class="flex ml-10 space-x-4">
+				<a href="/">Home</a>
+				<a href="/articles">Articles</a>
+				<a href="/about">about</a>
+				<p>|</p>
+				<a href="https://github.com/jiberwabish/">GitHub</a>
+				<a href="https://discordapp.com/users/250087569520328724">Discord</a>
+				<a href="https://www.linkedin.com/in/stavrostz/">LinkedIn</a>
+			</nav>
+			</svelte:fragment>
+			
+			<!-- <svelte:fragment slot="trail">
+				<nav class="mr-10 space-x-4">
 				<a
 					class="btn btn-sm variant-ghost-surface"
 					href="https://github.com/jiberwabish/"
@@ -61,14 +75,15 @@
 				>
 					LinkedIn
 				</a>
-			</svelte:fragment>
+				</nav>
+			</svelte:fragment> -->
 		</AppBar>
 	<!-- after importing header, you need to say where you want to keep it -->
 	<Header />
 	</svelte:fragment>
 	<!-- Page Route Content -->
 	<!-- putting each article in this div ensures markdown is rendered correctly -->
-	<div class="prose prose-lg prose-neutral prose-invert max-w-1000 mx-auto px-4 py-8">
+	<div class="prose prose-lg prose-neutral prose-invert max-w-1200 mx-auto px-4 py-8">
 		<slot />
 	</div>
 	<footer>
