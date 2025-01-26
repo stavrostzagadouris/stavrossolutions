@@ -28,55 +28,42 @@
 	
 </script>
 
+<style lang="postcss">
+	a {
+		&:hover {
+			@apply text-purple-500;
+		}
+	}
+</style>
+
 <!-- App Shell -->
 <AppShell>
 	<svelte:fragment slot="header">
 		<!-- App Bar -->
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<strong class="ml-10 text-xl"><a href="/">Stavros Solutions</a></strong>
+				<strong class="lg:ml-10 text-xl"><a href="/">Stavros Solutions</a></strong>
 			</svelte:fragment>
 			
 			<svelte:fragment slot="trail">
-			<nav class="flex ml-10 space-x-4">
-				<a href="/">Home</a>
-				<a href="/articles">Articles</a>
-				<a href="/about">about</a>
-				<p>|</p>
+			<nav class="flex flex-wrap lg:mr-10 space-x-2">
+				<p class="text-teal-200">|</p>
 				<a href="https://github.com/jiberwabish/">GitHub</a>
 				<a href="https://discordapp.com/users/250087569520328724">Discord</a>
 				<a href="https://www.linkedin.com/in/stavrostz/">LinkedIn</a>
 			</nav>
-			</svelte:fragment>
+
+			<!-- <nav class="flex mr-10 space-x-4">
+				<a href="/">Home</a>
+				<a href="/articles">Articles</a>
+				<a href="/about">about</a>
+				<p class=text-teal-200>|</p>
+				<a href="https://github.com/jiberwabish/">GitHub</a>
+				<a href="https://discordapp.com/users/250087569520328724">Discord</a>
+				<a href="https://www.linkedin.com/in/stavrostz/">LinkedIn</a>
+			</nav> -->
 			
-			<!-- <svelte:fragment slot="trail">
-				<nav class="mr-10 space-x-4">
-				<a
-					class="btn btn-sm variant-ghost-surface"
-					href="https://github.com/jiberwabish/"
-					target="_blank"
-					rel="noreferrer"
-				>
-					GitHub
-				</a>
-				<a
-					class="btn btn-sm variant-ghost-surface"
-					href="https://discordapp.com/users/250087569520328724"
-					target="_blank"
-					rel="noreferrer"
-				>
-					Discord
-				</a>
-				<a
-					class="btn btn-sm variant-ghost-surface"
-					href="https://www.linkedin.com/in/stavrostz/"
-					target="_blank"
-					rel="noreferrer"
-				>
-					LinkedIn
-				</a>
-				</nav>
-			</svelte:fragment> -->
+			</svelte:fragment>
 		</AppBar>
 	<!-- after importing header, you need to say where you want to keep it -->
 	<Header />

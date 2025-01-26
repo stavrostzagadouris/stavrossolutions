@@ -1,5 +1,5 @@
 <!-- Header.svelte -->
 <header>
-	<!-- Actually don't think I want a header -->
+	<!-- no header at the moment -->
 
 </header>
