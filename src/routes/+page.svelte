@@ -5,12 +5,11 @@
 				
 		<div class="justify-center space-y-1">
 			<p>Peruse my historic accounts of frustrating fixes, setups and guides to save yourself a headache.</p>
-			<p>Then get a different kind of headache cringing so hard at my AI generated pictures that go with them. 🙅🖼️</p>
+			<!-- <p>Then get a different kind of headache cringing so hard at my AI generated pictures that go with them.</p> -->
 		</div>
 		<div class="flex justify-center">
 			<nav class="flex flex-wrap space-x-4 mt-10">
-				<a href="/articles">Articles</a>
-				<a href="/about">About</a>
+				<a href="/articles">How To Articles</a>
 			</nav>
 		</div>
 	</div>
