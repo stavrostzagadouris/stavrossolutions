@@ -1,6 +1,6 @@
 
 <div class="container h-full mx-auto flex justify-center items-center">
-	<div class="space-y-2 text-center flex flex-col items-center">
+	<div class="space-y-2 text-center flex-col flex items-center">
 		<h2 class="h2">👋 Hello, friend from the future.</h2>
 				
 		<div class="justify-center space-y-1">
