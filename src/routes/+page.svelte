@@ -11,6 +11,7 @@
 			<nav class="flex flex-wrap space-x-4 mt-10">
 				<a href="/articles">How To Articles</a>
 			</nav>
+			<p>test</p>
 		</div>
 	</div>
 </div>
