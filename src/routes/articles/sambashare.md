@@ -12,7 +12,7 @@ sudo apt install samba
 sudo nano /etc/samba/smb.conf
 ```
 3. Skip to the bottom and add this section:
-
+```bash
 [whateveryouwantyoursharetobenamed]
 path = /path/to/your/share
 available = yes
@@ -21,6 +21,7 @@ read only = no
 browsable = yes
 public = no
 writable = yes
+```
 
 Ctrl O to write, then Ctrl X to leave
 
