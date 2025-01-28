@@ -98,7 +98,7 @@
 	<footer>
 		<div class="container mx-auto flex justify-center items-center flex-col text-xs">
 			<p>_______</p>
-			<p><a href="https://github.com/jiberwabish/stavrossolutions">stavrossolutions.com</a></p>
+			<p><a href="https://github.com/stavrostzagadouris/stavrossolutions">stavrossolutions.com</a></p>
 		</div>
 	</footer>
 </AppShell>
