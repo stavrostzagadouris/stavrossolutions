@@ -64,14 +64,15 @@
 		<!-- App Bar -->
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<strong class="lg:ml-10 text-xl"><a href="/">Stavros Solutions</a></strong>
+				<a class="lg:ml-20 text-xl" href="/"><strong>Stavros Solutions</strong></a>
+				
 			</svelte:fragment>
 			
 			<svelte:fragment slot="trail">
-			<nav class="flex flex-wrap lg:mr-10 space-x-2">
+			<nav class="flex flex-wrap lg:mr-20 space-x-2">
 				<p class="text-teal-200">|</p>
 				<a href="https://github.com/stavrostzagadouris/">GitHub</a>
-				<a href="https://discordapp.com/users/250087569520328724">Discord</a>
+				<!-- <a href="https://discordapp.com/users/250087569520328724">Discord</a> -->
 				<a href="https://www.linkedin.com/in/stavrostz/">LinkedIn</a>
 			</nav>
 
