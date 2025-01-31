@@ -24,7 +24,7 @@
 	I find I keep needing to re-research how to do things I've done before, so I decided to document them here instead.
 	I hope you find them useful too.</p>
 	<ul>
-		<li><a href="./articles/gitbasiccommands.md">Super simple git commit commands</a></li>
+		<li><a href="./articles/gitbasiccommands">Super simple git commit commands</a></li>
 		<li><a href="./articles/services">Working with Services cheatsheet (Ubuntu)</a></li>
 		<li><a href="./articles/github">Connecting github via terminal (Ubuntu)</a></li>
 		<li><a href="./articles/automountNTFS">Automounting NTFS (Ubuntu)</a></li>
