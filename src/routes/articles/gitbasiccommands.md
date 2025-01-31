@@ -9,7 +9,7 @@ For example, right now I'm writing this post in neovim on Ubuntu. I'm going to s
 
 So, once I'm done this article I'm going to need to:
 
-1. Stage my changes
+## 1. Stage my changes
 ```bash
 git add [your file name here]
 ```
@@ -19,14 +19,14 @@ git add .
 ```
 To just stage all changes in the current dir and subdir.
 
-2. Commit the changes
+## 2. Commit the changes
 ```bash
 git commit -m "your commit message, something like _added new super simple git article_"
 ```
 
-3. Finally, push the changes to github!
+## 3. Finally, push the changes to github!
 ```bash
 git push origin main
-
+```
 There, perfect. Now I know remember how to do it again and this article being posted is proof of that!
 
