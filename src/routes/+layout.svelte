@@ -93,7 +93,7 @@
 	</svelte:fragment>
 	<!-- Page Route Content -->
 	<!-- putting each article in this div ensures markdown is rendered correctly -->
-	<div class="prose prose-lg prose-neutral prose-invert max-w-1200 mx-auto px-4 py-8">
+	<div class="prose prose-lg prose-neutral prose-invert mx-auto px-4 py-8" style="max-width: 1000px;">
 		<slot />
 	</div>
 	<footer>
