@@ -28,5 +28,5 @@ git commit -m "your commit message, something like _added new super simple git a
 ```bash
 git push origin main
 ```
-There, perfect. Now I know remember how to do it again and this article being posted is proof of that!
+There, perfect. Now I know how to do it again and this article being posted is proof of that!
 
