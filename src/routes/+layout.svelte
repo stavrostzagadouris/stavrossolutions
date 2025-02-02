@@ -30,6 +30,11 @@
 	
 </script>
 
+<svelte:head>
+  <title>Stavros Solutions</title>
+  <meta name="description" content="Random guides and fixes I've needed of late. Maybe they'll help you too!" />
+</svelte:head>
+
 <style lang="postcss">
 	a {
 		&:hover {
