@@ -57,14 +57,14 @@
 	}
 	.article-item {
 		display: flex;
-		justify-content: space-between; /* Pushes the date to the right */
-		align-items: baseline; /* Aligns the date and link by their baselines */
-		margin-bottom: 0.5em; /* Space between list items */
+		flex-direction: column;
 		margin-left: -2em; /* Pulls the list items to the left */
+		margin-bottom: -10px;
   	}
    .article-date {
-		margin-left: 1em; /* Space between link and date */
+		text-align: right;
 		font-size: 0.9em; /* Make date font slightly smaller */
 		color: gray; /* Change the colour of the date */
+		margin-top: -10px;
    }
 </style>
