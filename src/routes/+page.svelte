@@ -23,6 +23,10 @@
 	I hope you find them useful too.</p>
 	<ul>
 	<li class="article-item">
+		<a href="./articles/nfs">Setting up NFS fileshare (Ubuntu)</a>
+		<span class="article-date">2025-02-17</span>
+	</li>
+	<li class="article-item">
 		<a href="./articles/gitbasiccommands">Super simple git commit commands</a>
 		<span class="article-date">2025-01-30</span>
 	</li>
