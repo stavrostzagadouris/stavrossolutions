@@ -4,7 +4,7 @@ date: '2024-08-24'
 ---
 
 ### NOTE: I found NFS is quicker and easier and have an article of that here:
-[NFS Share setup (Ubuntu)](./articles/nfs)
+[NFS Share setup (Ubuntu)](./nfs)
 
 1. Install samba
 ```bash
