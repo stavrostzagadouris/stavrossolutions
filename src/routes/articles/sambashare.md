@@ -1,7 +1,10 @@
 ---
-title: Share drive or fold using Samba in Ubuntu
+title: Share drive or folder using Samba in Ubuntu
 date: '2024-08-24'
 ---
+
+### NOTE: I found NFS is quicker and easier and have an article of that here:
+[NFS Share setup (Ubuntu)](./articles/nfs)
 
 1. Install samba
 ```bash
