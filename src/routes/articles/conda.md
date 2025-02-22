@@ -22,7 +22,7 @@ They can even all have their own environment.
 # Miniconda
 
 ## 1. Install Miniconda
-Use this link to download miniconda: [https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe]{https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe}
+Use this link to download miniconda: [https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe](https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe)
 Run through the standard install process.
 
 ## 2. Open up Terminal or Powershell7
@@ -74,4 +74,4 @@ conda remove --name comfy --all
 
 So that's enough to get you started. There are more resources if you so desire. 
 Here's Anaconda's cheatsheet if you like as well:
-[https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf]{https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf}
+[https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf)
