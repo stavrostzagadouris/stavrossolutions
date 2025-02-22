@@ -30,10 +30,15 @@ sudo nano /etc/exports
 /home/username/share 192.168.1.0/24(rw,sync,no_subtree_check)
 ```
 Obviously the first section is the full location of the folder you want to share.
+
 Next is the network you want to share it to. a /24 network means, in this example, that *any* IP address starting with 192.168.1 will be able to access the share. You can narrow this down or increase scope via [CIDR notation](https://www.freecodecamp.org/news/subnet-cheat-sheet-24-subnet-mask-30-26-27-29-and-other-ip-address-cidr-network-references/)
+
 The options in the brackets are standard options. 
+
 rw so that you can readwrite to it. Could be ro if you prefer to set it to read only.
+
 sync ensures changes are written to disk immediatly so as to not have a delay across the share.
+
 no_subtree_checking is just a performance improver.
 
 ## 5. Restart NFS service
@@ -72,8 +77,19 @@ ip a
 ```
 Will provide the IP if you don't know it.
 
-## Done!
+## But wait! There's more.
 
-Enjoy your new speedy share.
+To ensure it's persistent over reboots you need modify /etc/fstab file.
 
-The share will persist on reboots as the /etc/exports file we editted is read ever time the nfs server restarts.
+## 10. Open the /etc/fstab file:
+```bash
+sudo nano /etc/fstab
+```
+## 11. Add the NFS share entry:
+```bash
+192.168.1.1:/home/username/share /home/username/remoteShare nfs defaults 0 0
+```
+
+
+
+
