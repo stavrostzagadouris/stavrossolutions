@@ -3,17 +3,17 @@ title: Super simple miniconda setup (Windows)
 date: '2025-02-22'
 ---
 
-When I first started playing with python and making scripts, I didn't realize I was gumming up my main systems environment with packages and variables etc.
+When I first started playing with python and making scripts, I didn't realize I was gumming up my main systems' environment with packages and variables etc.
 
 Luckily a friend pointed me toward miniconda and venv.
 
-The idea is that with python scripts for example, they need packages like 'openai' or 'beautifulsoup'. Sometimes they're very picky about what versions they need and it can get messy if you install the wrong one(s). 
+The idea is that with python scripts for example, they need packages like 'openai' or 'beautifulsoup'. Sometimes they're very picky about what versions they need and it can get messy if you install the wrong one(s) and I've definitely gotten to a point where I mangled my main system so much I could no longer play with the project I was trying to work with and I didn't know what to do. 
 
 It would be so much easier if you could just wipe the whole environment and start again. And that's the whole point with miniconda and venv.
 
 When I'm on Windows I use miniconda, and when I'm in Linux (I tend to use Ubuntu) I use venv.
 
-I'll go over miniconda in this article, but only at the most basic level, simply installing and setting up/deteling a new environment. 
+I'll go over miniconda in this article, but only at the most basic level, simply installing and setting up/deleting a new environment. 
 
 There is way much more functionality I've never gotten into personally, so I can't write on that yet, but even just knowing how to create and delete environments will make your python/comfyui/personal projects so much easier to manage. 
 
@@ -54,7 +54,7 @@ You'll notice your prompt has changed to reflect the environment you're in:
 
 This is a perfectly clean environment to start, it only has Python 3.11.
 
-Generally with projects you can now clone them from githup pand pip install -r requirmements.txt to install all the packages listed in the requirements.txt into the environment.
+Generally with projects you can now clone them from githup and pip install -r requirmements.txt to install all the packages listed in the requirements.txt into the environment.
 
 The important part to realize is that any packages you install are contained in this environment.
 
@@ -62,7 +62,7 @@ If you ever screw up or want to start over just delete the environment and start
 
 ## 6. Deactivating and deleting environments
 
-To deactivate, simply:
+To deactivate and return to your 'base' environment:
 ```ps
 conda deactivate
 ```
@@ -72,6 +72,7 @@ To delete your environment completely:
 conda remove --name comfy --all
 ```
 
-So that's enough to get you started. There are more resources if you so desire. 
+So that's enough to get you started. There are more resources if you so desire.
+ 
 Here's Anaconda's cheatsheet if you like as well:
 [https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf)
