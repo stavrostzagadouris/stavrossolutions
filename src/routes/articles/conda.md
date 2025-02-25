@@ -15,7 +15,7 @@ When I'm on Windows I use miniconda, and when I'm in Linux (I tend to use Ubuntu
 
 I'll go over miniconda in this article, but only at the most basic level, simply installing and setting up/deleting a new environment. 
 
-There is way much more functionality I've never gotten into personally, so I can't write on that yet, but even just knowing how to create and delete environments will make your python/comfyui/personal projects so much easier to manage. 
+There is much more functionality I've never gotten into personally, so I can't write on that yet, but even just knowing how to create and delete environments will make your python/comfyui/personal projects so much easier to manage. 
 
 They can even all have their own environment.
 
