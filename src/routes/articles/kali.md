@@ -3,15 +3,17 @@ title: Ephemeral Kali in Docker - Windows
 date: '2025-03-07'
 ---
 
-The title says Windows but the cool thing about Docker is it doesn't really matter. 
-This tutorial uses windows though..
+The title says Windows but the cool thing about Docker is it doesn't really matter. When complete, this docker will run in any host OS.
+This tutorial uses windows for the setup but would translate pretty well to other OS's.
 
-The end goal of this article is to have you running a Kali terminal docker from terminal that will be fully fledged, and optionally customized how you want it, ready to spin up at a moments notice.
+The end goal of this article is to have you running a Kali docker from terminal that will be fully fledged, and optionally customized how you want it, ready to spin up at a moments notice.
+
 Then whenever you quit, it reverts to the state it was in before you started.
-(I'll show you how to 'save' the state too so you can get it all configured the way you like first)
+
+I'll show you how to 'save' the state too so you can get it all configured the way you like first.
 
 ## 1. Download docker desktop and run it as admin
-*I'm not Docker pro, like many of these articles, I know enough to get it going and start learning. This is to say maybe you can do this without the full desktop app but I haven't looked into it as I do like to cheat sometimes and use the gui to manage deletion of containers/images -- don't tell anyone..*
+*I'm not a Docker pro, like many of these articles, I know enough to get it going and start learning. This is to say maybe you can do this without the full desktop app but I haven't looked into it as I do like to cheat sometimes and use the gui to manage deletion of containers/images -- don't tell anyone..*
 
 Scroll down to Download Docker Desktop:
 [https://www.docker.com/products/docker-desktop/](https://www.docker.com/products/docker-desktop/)
@@ -31,10 +33,10 @@ We're going to do the rest of the setup here.
 To download the latest Kali Linux image, run the following command:
 
 ```terminal
-Docker pull kalilinux/kali-rolling
+docker pull kalilinux/kali-rolling
 ```
 
-This will quickly download a tiny image for Kali that we'll use as our base.
+This will quickly download a tiny image of Kali that we'll use as our base.
 
 ## 4. Run the Kali image
 
@@ -47,11 +49,12 @@ docker run -it kalilinux/kali-rolling /bin/bash
 The *-it* flag means you want an interactive terminal to pop up as well. Docker will let you run images in the background. Here we're specifying that we want to hop right into it when it's done.
 
 *kalilinux/kali-rolling* is the name of the image.
+
 */bin/bash* is the command to execute once powered up, which is just the terminal for Kali in this case.
 
 ## 5. Load it up with tools
 
-This image does not include all the tools Kali normally does, instead expecting you to personalize it and fatten it up with whatever you want.
+This image does not include all the tools Kali normally does, instead expecting you to personalize it and pick and choose what you want to add.
 
 In my case, I just want everything, sooooo, lets update the package manager, and then install the standard Kali suite.
 
@@ -70,14 +73,13 @@ apt update && apt upgrade -y
 
 ## 6. Save your custom version of this Kali image
 
-So the way Docker would work by default is that if you were to type ```exit``` and leave, your image will revert back to what it was when you first started, and none of the packages would be there the next time you fire it up.
+The he way Docker would work by default is that if you were to type ``exit`` and leave, your image will revert back to what it was when you first started, and none of the packages would be there the next time you fire it up.
+
 Not ideal.
 
-So when your Kali iamges is populated with programs and updated, open another terminal tab, because we're now going to commit these changes to a custom image and run *that* image going forward.
+So when your Kali image is populated with programs and updated, open another terminal tab, because we're now going to commit these changes to a custom image and run *that* image going forward.
 
-In your new terminal window, we're going to basically write all your changes to a new image file you can name whatever you want.
-
-## 7. Saving your custom version of this Kali image for real this time
+## 7. Saving your custom version of this Kali image, for real this time
 
 List your running containers as you'll need the container ID for the next steps.
 
@@ -90,10 +92,10 @@ Note the container ID of your running kali. Better yet, highlight and copy it by
 Now we're going commit your changes to a new image. In the example below, we're naming the container 'fullKali'. You choose whatever you want:
 
 ```terminal
-Docker commit <container id of running kali> fullkali
+docker commit <container id of running kali without the angle braces> fullkali
 ```
 
-*This could take a while depending on the speed of your storage.*
+*This could take a while depending on the speed of the drive in your computer.*
 
 ## 8. Out with the old Kali...
 
@@ -109,20 +111,21 @@ exit
  
 Now whenever you want to run your full kali install: 
 
-Docker run -it fullkali /bin/bash 
+```terminal
+docker run -it fullkali /bin/bash 
+```
 
-
-Now you've got a fully featured (albiet gui-less) Kali at your fingertips, ready to boot up at a moments notice!
+Now you've got a fully featured (albeit gui-less) Kali at your fingertips, ready to boot up at a moments notice!
 
 ## 10. Keeping your Docker environment clean
 
-I'm still new to Docker and I find I end up collecting a whole tonne of containers (created every time you run a image) and images (in our case Kali here, but it can be specific tools or other flavors of Linux) that I no longer need.
+I'm still new to Docker and I find I end up collecting a whole tonne of containers (created every time you run a image) and images (in our case Kali here, and the custom one we just made, but it can be specific tools or other flavors of Linux) that I no longer need.
 
 Here are a few commands to keep the inevitable sprawl under control.
 
 ### List and Remove all stopped containers
 
-To List all containers:
+To list all containers:
 ```terminal
 docker ps -a
 ```
