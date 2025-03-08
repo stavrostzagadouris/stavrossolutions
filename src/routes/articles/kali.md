@@ -128,7 +128,7 @@ Here are a few commands to keep the inevitable sprawl under control.
 To list all containers:
 ```terminal
 docker ps -a
-```
+``` 
 
 To remove all stopped containers:
 ```terminal
