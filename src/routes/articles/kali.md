@@ -73,7 +73,7 @@ apt update && apt upgrade -y
 
 ## 6. Save your custom version of this Kali image
 
-The he way Docker would work by default is that if you were to type ``exit`` and leave, your image will revert back to what it was when you first started, and none of the packages would be there the next time you fire it up.
+The way Docker would work by default is that if you were to type `` exit `` and leave, your image will revert back to what it was when you first started, and none of the packages would be there the next time you fire it up.
 
 Not ideal.
 
