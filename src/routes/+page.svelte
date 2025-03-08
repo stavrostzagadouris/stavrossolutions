@@ -23,6 +23,10 @@
 	I hope you find them useful too.</p>
 	<ul>
 	<li class="article-item">
+		<a href="./articles/kali">Ephemeral Kali in Docker (Windows)</a>
+		<span class="article-date">2025-03-08</span>
+	</li>
+	<li class="article-item">
 		<a href="./articles/conda">Super simple miniconda setup (Windows)</a>
 		<span class="article-date">2025-02-22</span>
 	</li>	
