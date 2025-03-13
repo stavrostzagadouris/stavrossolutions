@@ -112,7 +112,7 @@ exit
 Now whenever you want to run your full kali install: 
 
 ```terminal
-docker run --cap-add=NET_ADMIN -it trentkali2 /bin/bash
+docker run --cap-add=NET_ADMIN -it fullKali /bin/bash
 ```
 
 Note the --cap-add=NET_ADMIN gives the container network admin to let it run tools like nmap.
