@@ -24,7 +24,7 @@
 	<ul>
 		
 	<li class="article-item">
-		<a href="./articles/kali">Super simple venv usage - (Linux)</a>
+		<a href="./articles/venv">Super simple venv usage (Linux)</a>
 		<span class="article-date">2025-04-09</span>
 	</li>
 	<li class="article-item">
