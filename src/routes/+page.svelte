@@ -22,6 +22,11 @@
 	I find I keep needing to re-research how to do things I've done before, so I decided to document them here instead.
 	I hope you find them useful too.</p>
 	<ul>
+		
+	<li class="article-item">
+		<a href="./articles/kali">Super simple venv usage - (Linux)</a>
+		<span class="article-date">2025-04-09</span>
+	</li>
 	<li class="article-item">
 		<a href="./articles/kali">Ephemeral Kali in Docker (Windows)</a>
 		<span class="article-date">2025-03-08</span>
