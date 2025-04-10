@@ -97,7 +97,7 @@ docker ps
 
 Note the container ID of your running kali. Better yet, highlight and copy it by just right clicking anywhere after it's highlighted. You won't see any confirmation, but the highlighted portion is now waiting on your clipboard to be pasted again later by once again just right-clicking.
 
-Now we're going commit your changes to a new image. In the example below, we're naming the container 'fullKali'. You choose whatever you want:
+Now we're going commit your changes to a new image. In the example below, we're naming the container 'fullkali'. You choose whatever you want:
 
 ```terminal
 docker commit <container id of running kali without the angle braces> fullkali
@@ -120,7 +120,7 @@ exit
 Now whenever you want to run your full kali install: 
 
 ```terminal
-docker run --cpuset-cpus="0-7" --privileged --cap-add=NET_ADMIN -v /c/docker/tools:/tools -it --network host --entrypoint /sbin/init trentkali3
+docker run --cpuset-cpus="0-7" --privileged --cap-add=NET_ADMIN -v /c/docker/tools:/tools -it --network host --entrypoint /sbin/init fullkali
 ```
 
 Note the --cap-add=NET_ADMIN gives the container network admin to let it run tools like nmap.
