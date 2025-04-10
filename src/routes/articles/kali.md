@@ -124,12 +124,19 @@ docker run --cpuset-cpus="0-7" --privileged --cap-add=NET_ADMIN -v /c/docker/too
 ```
 
 Note the --cap-add=NET_ADMIN gives the container network admin to let it run tools like nmap.
+
 --cpuset-cpus="0-7" sets how many CPU cores it has access to
+
 --privileged gives it the permissions needed for it's tools to run
+
 -v stands for volumes and in this case I'm mounting a folder '/tools' in Kali to a local folder 'c:docker/tools' on the host computer
+
 -it means interactive terminal, so it will switch straight to the running Kali after pressing enter
+
 --network host uses the hosts IP directly to let it use DNS properly, may or may not need this yourself.
+
 --entrypoint /sbin/init is required for some kali tools to run
+
 
 **Once you're in, you need to login. Since you set the root users password earlier, login as root.**
 
