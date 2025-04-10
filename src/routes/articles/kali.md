@@ -71,6 +71,14 @@ When it's done, it's probably a good idea to upgrade all packages too while we'r
 apt update && apt upgrade -y
 ```
 
+Change the root user password. Not something you'd normally need but with Kali it lets you use it's tools easier
+
+```bash
+passwd root
+```
+
+The old default used to be 'toor', but use whatever you like.
+
 ## 6. Save your custom version of this Kali image
 
 The way Docker would work by default is that if you were to type `` exit `` and leave, your image will revert back to what it was when you first started, and none of the packages would be there the next time you fire it up.
@@ -112,12 +120,26 @@ exit
 Now whenever you want to run your full kali install: 
 
 ```terminal
-docker run --cap-add=NET_ADMIN -it fullKali /bin/bash
+docker run --cpuset-cpus="0-7" --privileged --cap-add=NET_ADMIN -v /c/docker/tools:/tools -it --network host --entrypoint /sbin/init trentkali3
 ```
 
 Note the --cap-add=NET_ADMIN gives the container network admin to let it run tools like nmap.
+--cpuset-cpus="0-7" sets how many CPU cores it has access to
+--privileged gives it the permissions needed for it's tools to run
+-v stands for volumes and in this case I'm mounting a folder '/tools' in Kali to a local folder 'c:docker/tools' on the host computer
+-it means interactive terminal, so it will switch straight to the running Kali after pressing enter
+--network host uses the hosts IP directly to let it use DNS properly, may or may not need this yourself.
+--entrypoint /sbin/init is required for some kali tools to run
+
+**Once you're in, you need to login. Since you set the root users password earlier, login as root.**
 
 Now you've got a fully featured (albeit gui-less) Kali at your fingertips, ready to boot up at a moments notice!
+
+To quit out of your kali instance when you're done, since we booted it with /sbin/init, you need to shut it right down or the container will continue to run in the background after you close it.
+So:
+```bash
+shutdown -h now
+```
 
 ## 10. Keeping your Docker environment clean
 
