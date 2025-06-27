@@ -1,5 +1,5 @@
 ---
-title: Automounting NTFS drive with RW in Ubuntu
+title: Automounting NTFS drive with RW - Ubuntu
 date: '2024-08-28'
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Super simple screen usage (Linux)
+title: Super simple screen usage - Linux
 date: '2025-06-27'
 ---
 

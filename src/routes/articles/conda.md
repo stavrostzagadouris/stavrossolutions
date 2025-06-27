@@ -1,5 +1,5 @@
 ---
-title: Super simple miniconda setup (Windows)
+title: Super simple miniconda setup - Windows
 date: '2025-02-22'
 ---
 

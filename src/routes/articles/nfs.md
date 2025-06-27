@@ -1,5 +1,5 @@
 ---
-title: Setting up NFS fileshare (Ubuntu)
+title: Setting up NFS fileshare - Ubuntu
 date: '2025-02-17'
 ---
 

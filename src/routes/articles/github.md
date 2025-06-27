@@ -1,5 +1,5 @@
 ---
-title: Ubuntu - Installing git and github and signing in via terminal
+title: Installing git and github and signing in via terminal - Ubuntu
 date: '2024-09-02'
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Working with Services in Ubuntu
+title: Working with Services - Ubuntu
 date: '2025-01-29'
 ---
 

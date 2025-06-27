@@ -1,5 +1,5 @@
 ---
-title: Share drive or folder using Samba in Ubuntu
+title: Share drive or folder using Samba - Ubuntu
 date: '2024-08-24'
 ---
 
