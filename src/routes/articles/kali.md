@@ -32,7 +32,7 @@ We're going to do the rest of the setup here.
 
 To download the latest Kali Linux image, run the following command:
 
-```terminal
+```bash
 docker pull kalilinux/kali-rolling
 ```
 
@@ -42,7 +42,7 @@ This will quickly download a tiny image of Kali that we'll use as our base.
 
 To run the image, use the following command:
 
-```terminal
+```bash
 docker run -it kalilinux/kali-rolling /bin/bash 
 ```
 
@@ -58,7 +58,7 @@ This image does not include all the tools Kali normally does, instead expecting 
 
 In my case, I just want everything, sooooo, lets update the package manager, and then install the standard Kali suite.
 
-```terminal
+```bash
 apt update
 apt install kali-linux-default
 ```
@@ -67,7 +67,7 @@ This could take a few minutes to finish.
 
 When it's done, it's probably a good idea to upgrade all packages too while we're at it.
 
-```terminal
+```bash
 apt update && apt upgrade -y
 ```
 
@@ -91,7 +91,7 @@ So when your Kali image is populated with programs and updated, open another ter
 
 List your running containers as you'll need the container ID for the next steps.
 
-```terminal
+```bash
 docker ps
 ```
 
@@ -99,7 +99,7 @@ Note the container ID of your running kali. Better yet, highlight and copy it by
 
 Now we're going commit your changes to a new image. In the example below, we're naming the container 'fullkali'. You choose whatever you want:
 
-```terminal
+```bash
 docker commit <container id of running kali without the angle braces> fullkali
 ```
 
@@ -111,7 +111,7 @@ When it's done you'll just be waiting back at the command prompt.
 
 Back in your original terminal window, exit your Kali image:
 
-```terminal
+```bash
 exit
 ```
 
@@ -119,7 +119,7 @@ exit
  
 Now whenever you want to run your full kali install: 
 
-```terminal
+```bash
 docker run --cpuset-cpus="0-7" --privileged --cap-add=NET_ADMIN -v /c/docker/tools:/tools -it --network host --entrypoint /sbin/init fullkali
 ```
 
@@ -158,12 +158,12 @@ Here are a few commands to keep the inevitable sprawl under control.
 ### List and Remove all stopped containers
 
 To list all containers:
-```terminal
+```bash
 docker ps -a
 ``` 
 
 To remove all stopped containers:
-```terminal
+```bash
 docker container prune
 ```
 
@@ -172,12 +172,12 @@ docker container prune
 You *may* want to get rid of that original Kali image we downloaded, or others in the future.
 If so:
 
-```terminal
+```bash
 docker rmi kalilinux/kali-rolling
 ```
 
 To list other images:
-```terminal
+```bash
 docker images
 ```
 

@@ -1,26 +1,35 @@
 import adapter from '@sveltejs/adapter-auto';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { mdsvex } from 'mdsvex';
+import { createHighlighter } from 'shiki';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	extensions: ['.svelte', '.md'],
-	// Consult https://kit.svelte.dev/docs/integrations#preprocessors
-	// for more information about preprocessors
-	preprocess: [vitePreprocess(),
+	preprocess: [
+		vitePreprocess(),
 		mdsvex({
 			extension: '.md',
 			layout: {
 				blog: 'src/routes/articles/post.svelte'
+			},
+			highlight: {
+				highlighter: async (code, lang = 'text') => {
+					const highlighter = await createHighlighter({ 
+						themes: ['github-dark', 'github-light'],
+						langs: ['javascript', 'typescript', 'html', 'css', 'bash', 'shell', 'json']
+					});
+					await highlighter.loadLanguage(lang);
+					const html = highlighter.codeToHtml(code, { lang, theme: 'github-dark' });
+					return '{@html `' + html + '` }';
+				}
 			}
 		})
 	],
-	
+
 	kit: {
-		// adapter-auto only supports some environments, see https://kit.svelte.dev/docs/adapter-auto for a list.
-		// If your environment is not supported or you settled on a specific environment, switch out the adapter.
-		// See https://kit.svelte.dev/docs/adapters for more information about adapters.
 		adapter: adapter()
 	}
 };
+
 export default config;

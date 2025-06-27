@@ -2,26 +2,8 @@
 	import '../app.postcss';
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
 
-	// Highlight JS
-	import hljs from 'highlight.js/lib/core';
-	import 'highlight.js/styles/github-dark.css';
-	import { storeHighlightJs } from '@skeletonlabs/skeleton';
-	import xml from 'highlight.js/lib/languages/xml'; // for HTML
-	import css from 'highlight.js/lib/languages/css';
-	import javascript from 'highlight.js/lib/languages/javascript';
-	import typescript from 'highlight.js/lib/languages/typescript';
-	// import the header file you have in lib components here but you need to 
-	
-	//trying shiki
-
-	// use it in the svelte fragment below 
+		// use it in the svelte fragment below 
 	import Header from '$lib/components/Header.svelte';
-
-	hljs.registerLanguage('xml', xml); // for HTML
-	hljs.registerLanguage('css', css);
-	hljs.registerLanguage('javascript', javascript);
-	hljs.registerLanguage('typescript', typescript);
-	storeHighlightJs.set(hljs);
 
 	// Floating UI for Popups
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
@@ -41,26 +23,6 @@
 			@apply text-purple-500;
 		}
 	}
-
-
-  /* Target inline code */
-  .prose code {
-    @apply font-mono text-sm px-1 py-0.5 rounded bg-gray-100; /* Tailwind classes */
-    color: #333; /* Custom color */
-  }
-
-  /* Target code blocks */
-  .prose pre {
-    @apply bg-gray-100 rounded-lg p-4 my-6 overflow-x-auto; /* Tailwind classes */
-    border: 1px solid #ddd; /* Custom border */
-  }
-
-  .prose pre code {
-    @apply font-mono text-sm; /* Tailwind classes */
-    color: #333; /* Custom color */
-    display: block; /* Important for proper code block formatting */
-    white-space: pre; /* Preserve whitespace */
-  }
 </style>
 
 <!-- App Shell -->

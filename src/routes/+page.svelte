@@ -16,54 +16,23 @@
 		</div> -->
 	</div>
 	
+<script lang="ts">
+    export let data;
+</script>
+
 <div>
 	<h3 style="text-align: center" class="mt-10 mb-10">Articles 📑</h3>
 	<p>	I wrote these articles primarily for myself to refer back to occasionally.
 	I find I keep needing to re-research how to do things I've done before, so I decided to document them here instead.
 	I hope you find them useful too.</p>
 	<ul>
-		
-	<li class="article-item">
-		<a href="./articles/venv">Super simple venv usage (Linux)</a>
-		<span class="article-date">2025-04-09</span>
-	</li>
-	<li class="article-item">
-		<a href="./articles/kali">Ephemeral Kali in Docker (Windows)</a>
-		<span class="article-date">2025-03-08</span>
-	</li>
-	<li class="article-item">
-		<a href="./articles/conda">Super simple miniconda setup (Windows)</a>
-		<span class="article-date">2025-02-22</span>
-	</li>	
-	<li class="article-item">
-		<a href="./articles/nfs">Setting up NFS fileshare (Ubuntu)</a>
-		<span class="article-date">2025-02-17</span>
-	</li>
-	<li class="article-item">
-		<a href="./articles/gitbasiccommands">Super simple git commit commands</a>
-		<span class="article-date">2025-01-30</span>
-	</li>
-	<li class="article-item">
-		<a href="./articles/services">Working with Services cheatsheet (Ubuntu)</a>
-		<span class="article-date">2025-01-29</span>
-	</li>
-	<li class="article-item">
-		<a href="./articles/github">Connecting github via terminal (Ubuntu)</a>
-		<span class="article-date">2024-09-02</span>
-	</li>
-	<li class="article-item">
-		<a href="./articles/automountNTFS">Automounting NTFS (Ubuntu)</a>
-		<span class="article-date">2024-08-28</span>
-	</li>
-	<li class="article-item">
-		<a href="./articles/sambashare">Share folder using Samba (Ubuntu)</a>
-		<span class="article-date">2024-08-24</span>
-	</li>
-	<li class="article-item">
-		<a href="./articles/bell2000">Bell HH 2000 delete (OPNSense)</a>
-		<span class="article-date">2024-08-22</span>
-	</li>
-</ul>
+		{#each data.articles as article}
+			<li class="article-item">
+				<a href="{article.path}">{article.meta.title}</a>
+				<span class="article-date">{article.meta.date}</span>
+			</li>
+		{/each}
+	</ul>
 </div>
 
 <style lang="postcss">
