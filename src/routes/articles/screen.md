@@ -3,9 +3,15 @@ title: Super simple screen usage - Linux
 date: '2025-06-27'
 ---
 
-Ever had a long-running command or process on a Linux server, and you need to close your terminal without killing it? That's where `screen` comes in handy.
+Sometimes when ssh'ing into a linux box, you do something that you'd like to continue doing later BUT you don't want to risk a disconnect of the ssh and lose insight into what you were doing, or lose the process altogether.
 
-It lets you create virtual terminal sessions that can be detached and reattached later. Super useful!
+In these cases you can use 'screen' to create a session you can reconnect to at any time.
+
+So the idea is you:
+1. ssh in
+2. setup a screen session (see below)
+3. now you can close this terminal window and reconnect later from a completely different device if you wish
+4. you can also have scripts setup to run at boot in their own screens so that you can hop into them to see what they're doing
 
 ## 1. Install screen
 
