@@ -1,6 +1,6 @@
 ---
 title: SSH Keys for Passwordless Login - Windows and Linux
-date: '2025-08-15'
+date: '2025-08-14'
 ---
 
 I haven't had much of a use case within my own home lab for ssh keys, but recently I had to setup an easy way for others to use them.
