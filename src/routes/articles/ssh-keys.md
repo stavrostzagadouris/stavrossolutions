@@ -112,7 +112,7 @@ sudo nano /etc/ssh/sshd_config
 
 ### 3.  Find the following lines and make sure they are set as shown. You might need to uncomment them (remove the `#` at the beginning of the line).
 
-```apacheconf
+```bash
 PubkeyAuthentication yes
 PasswordAuthentication no
 ChallengeResponseAuthentication no
