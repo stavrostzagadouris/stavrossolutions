@@ -1,5 +1,5 @@
 ---
-title: SSH Keys for Passwordless Login - Windows and Linux
+title: SSH Keys for Passwordless Login - Windows Linux Mac
 date: '2025-08-14'
 ---
 
@@ -23,7 +23,7 @@ ssh-keygen -t rsa -b 4096
 
 It will ask you where to save the key. The default location is good (`C:\Users\yourUsername\.ssh\id_rsa`). It will also ask for a passphrase, which is an extra layer of security. You can leave it blank if you want but ideally set this so that even a stolen private key wouldn't provide access to your server.
 
-### On Linux
+### On Linux and macOS
 
 Open a terminal and run:
 
@@ -31,7 +31,7 @@ Open a terminal and run:
 ssh-keygen -t rsa -b 4096
 ```
 
-Accept the default location (`/home/your_username/.ssh/id_rsa`) and set a passphrase.
+Accept the default location (`/home/your_username/.ssh/id_rsa` on Linux, or `/Users/your_username/.ssh/id_rsa` on macOS) and set a passphrase.
 
 ## 2. Copying your public key to the server
 
@@ -39,7 +39,7 @@ Now you need to get your public key onto the server you want to SSH into.
 
 ### The easy way (if you have `ssh-copy-id`)
 
-If your local machine has the `ssh-copy-id` command (common on Linux), you can use this one-liner:
+If your local machine has the `ssh-copy-id` command (common on Linux and macOS), you can use this one-liner:
 
 ```bash
 ssh-copy-id username@yourServerIP
@@ -58,7 +58,7 @@ On Windows (Powershell):
 cat C:\Users\yourUsername\.ssh\id_rsa.pub
 ```
 
-On Linux:
+On Linux and macOS:
 ```bash
 cat ~/.ssh/id_rsa.pub
 ```
