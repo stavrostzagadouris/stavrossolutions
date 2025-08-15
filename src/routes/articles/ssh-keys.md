@@ -17,7 +17,7 @@ You keep your private key on your 'client' machine, and then your 'public' key g
 
 Open up Powershell and run this command:
 
-```powershell
+```bash
 ssh-keygen -t rsa -b 4096
 ```
 
@@ -54,7 +54,7 @@ If you don't have `ssh-copy-id` (like on Windows), you'll need to do it manually
 First, display your public key on your local machine.
 
 On Windows (Powershell):
-```powershell
+```bash
 cat C:\Users\yourUsername\.ssh\id_rsa.pub
 ```
 
