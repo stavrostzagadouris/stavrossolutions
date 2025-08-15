@@ -1,4 +1,4 @@
-# My Personal Website & Blog
+# A simple to maintain template you can use for your own site
 
 This is my personal website and blog, built with SvelteKit and deployed on Cloudflare Pages. I use it to share my thoughts, tutorials, and anything else I find interesting.
 
