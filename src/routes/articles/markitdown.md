@@ -5,6 +5,7 @@ date: '2025-09-21'
 
 After working with AI a bunch, I've got a new understanding and appreciation of markdown.
 Then I found this Microsoft tool that converts all sorts of files to markdown.
+[markitdown github](https://github.com/microsoft/markitdown)
 
 Here's a reference for myself for the future, or anyone that passes by.
 
