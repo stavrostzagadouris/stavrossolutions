@@ -53,7 +53,7 @@ This will try to convert every file in the current folder, saving a new `.md` fi
 For Linux or macOS, you can do this with a simple `for` loop. `cd` to your folder and run:
 
 ```bash
-for file in *; do markitdown "$file" -o "${file%.*}.md"; done
+for file in *; do markitdown "$file" -o "\${file%.*}.md"; done
 ```
 
 The File%.* part, much like in powershell, is there to just strip the old extension off the file before appending .md to them.
