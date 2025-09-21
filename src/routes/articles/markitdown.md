@@ -26,7 +26,7 @@ You can use this tool with a simple one-liner from your terminal, either on a si
 
 ### Command-Line One-Liner
 
-This is the easiest way to convert a single file. Once you have `markitdown` installed, you can just run it directly from your terminal.
+This is the easiest way to convert a single file. Once you have 'markitdown' installed, you can just run it directly from your terminal.
 
 ```bash
 markitdown path-to-your-file.pdf -o output.md
