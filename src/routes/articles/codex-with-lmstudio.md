@@ -1,7 +1,11 @@
 ---
-title: Running Codex CLI with a Local LM Studio Model
+title: Running Codex CLI with a Local LM Studio Model - Windows
 date: '2025-10-23'
 ---
+
+> **NOTE** this guide is for Windows (not wsl in windows).
+I've since learned this is designed to run in WSL if your on windows, or in linux. It doesn't seem as smart with powershell as it is with shell.
+So I'll leave this here BUT I'll be writing a WSL/Linux one soon.
 
 I've been playing more with agentic things and this can run up your api bills quickly. So I wanted to see how to connect it to lm-studio local models.
 
