@@ -62,6 +62,19 @@ Of course edit the base_url to your lm studio servers address.
 codex --profile lms
 ```
 
+## 6. Bonus, run VScode alongsize codex
+
+Ensure you have VS code installed in your Windows environment first.
+
+Then in WSL simply start up code in the directory you just started codex up in:
+
+```bash
+code .
+```
+
+Now you'll be able to see when codex makes changes to your code in realtime within VScode.
+
+## 7. Done
 You’re now using a private, free local model via LM Studio!
 So cool.
 
@@ -70,3 +83,9 @@ The trick now is... can you load a smart enought model to make it useful :p
 > It's generally decided that currently Qwen-coder-30b is the best currently.
 
 Have fun.
+
+## 8. Secret point 8
+Note.. in my personal use, I'm finding Cline extension in VScode to work a billion times better than Codex.
+Maybe codex is good when hooked up to expensive models, but not when hooked up to gpt-oss-20b, qwen-coder-30b, or even gpt-oss-120b.
+
+Cline how-to incoming soon TM.
