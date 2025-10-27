@@ -1,36 +1,31 @@
 ---
-title: Running Codex CLI with a Local LM Studio Model - Windows
+title: Running Codex CLI with a Local LM Studio Model - WSL
 date: '2025-10-23'
 ---
 
-> **NOTE** this guide is for Windows (not wsl in windows).
-I've since learned this is designed to run in WSL if your on windows, or in linux. It doesn't seem as smart with powershell as it is with shell.
-So I'll leave this here BUT I'll be writing a WSL/Linux one soon.
+## 1. Install wsl if you haven't already, then start it
 
-I've been playing more with agentic things and this can run up your api bills quickly. So I wanted to see how to connect it to lm-studio local models.
+```bash
+wsl --install
+wsl
+```
 
-It's a lot quicker than I ever would have imagined. 
+## 2. Stag install of Node.js
 
-Below is how I did it, mostly for myself to re-read later when I need it, but  if it helps someone else, that's a bonus!
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+```
 
-## 1. Install Node.js and npm
+## 3. Quick then install Node.js for real this time
 
-If you don’t already have `npm`, grab it from the official site:
+```bash
+nvm install 22
+```
 
-[nodejs installer](https://nodejs.org/)
-
-
-## 2. Install Codex CLI
+## 4. Install and run codex
 
 ```bash
 npm i -g @openai/codex
-```
-
-## 3. Run Codex and login once
-
-Start the tool:
-
-```bash
 codex
 ```
 
@@ -71,6 +66,7 @@ You’re now using a private, free local model via LM Studio!
 So cool.
 
 The trick now is... can you load a smart enought model to make it useful :p
-It's tricky. I've been mostly playing with GPT-OSS-20B. I'd bet Qwen3 Coder 30b would work nicely as well but maybe the OSS model would be better as it's actually from openai too...
 
-Anyway. Have fun.
+> It's generally decided that currently Qwen-coder-30b is the best currently.
+
+Have fun.
