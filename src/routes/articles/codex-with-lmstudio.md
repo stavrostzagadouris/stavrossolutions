@@ -80,8 +80,6 @@ So cool.
 
 The trick now is... can you load a smart enought model to make it useful :p
 
-> It's generally decided that currently Qwen-coder-30b is the best currently.
-
 Have fun.
 
 ## 8. Secret point 8
