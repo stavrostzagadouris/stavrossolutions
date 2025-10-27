@@ -10,13 +10,13 @@ wsl --install
 wsl
 ```
 
-## 2. Stag install of Node.js
+## 2. Stage install of Node.js
 
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
 ```
 
-## 3. Quick then install Node.js for real this time
+## 3. Then install Node.js for real this time
 
 ```bash
 nvm install 22
@@ -62,7 +62,7 @@ Of course edit the base_url to your lm studio servers address.
 codex --profile lms
 ```
 
-## 6. Bonus, run VScode alongsize codex
+## 6. Bonus, run VScode alongside codex
 
 Ensure you have VS code installed in your Windows environment first.
 
@@ -83,7 +83,7 @@ The trick now is... can you load a smart enought model to make it useful :p
 Have fun.
 
 ## 8. Secret point 8
-Note.. in my personal use, I'm finding Cline extension in VScode to work a billion times better than Codex.
-Maybe codex is good when hooked up to expensive models, but not when hooked up to gpt-oss-20b, qwen-coder-30b, or even gpt-oss-120b.
+Note.. in my personal use, I'm finding Cline extension in VScode to work a billion times better than Codex. However that could be because I only use local models with agents because of the $$$.
+Maybe codex is good when hooked up to expensive models, but not when hooked up to gpt-oss-20b, qwen-coder-30b or other models I can fit in my 32GB VRAM.
 
 Cline how-to incoming soon TM.
