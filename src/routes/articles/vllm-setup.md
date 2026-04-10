@@ -1,6 +1,18 @@
 ---
+date: '2026-04-10'
+---
+date: '2026-04-10'
+---
+date: '2026-04-10'
+---
 title: vLLM Setup - Linux
 date: '2026-04-09'
+---
+date: '2026-04-10'
+---
+date: '2026-04-10'
+---
+date: '2026-04-10'
 ---
 
 I just tried vLLM for the first time, I normally use LM-Studio, and MAN it's wildly fast.
