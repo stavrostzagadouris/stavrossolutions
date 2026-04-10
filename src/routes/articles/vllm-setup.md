@@ -1,18 +1,6 @@
 ---
-date: '2026-04-10'
----
-date: '2026-04-10'
----
-date: '2026-04-10'
----
 title: vLLM Setup - Linux
 date: '2026-04-09'
----
-date: '2026-04-10'
----
-date: '2026-04-10'
----
-date: '2026-04-10'
 ---
 
 I just tried vLLM for the first time, I normally use LM-Studio, and MAN it's wildly fast.
@@ -69,3 +57,10 @@ But know that it will use a defaul one if you don't specify anything.
 Most find it easier to just make a new .env and install it fresh there, make sure it works, then blow away the old one.
 If you want to try upgrading it in place:
 ```pip install --upgrade vllm```
+
+***
+
+**Additional Resources:**
+For a full-featured server launch specifically optimized for Gemma 4, check out the official vLLM recipe: [Gemma 4 Full-Featured Server Launch](https://docs.vllm.ai/projects/recipes/en/latest/Google/Gemma4.html#full-featured-server-launch).
+
+Pay close attention to the **Jinja template** mentioned in the documentation, as it is crucial for ensuring correct tool-calling behavior with the model.
