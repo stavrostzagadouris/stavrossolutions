@@ -1,10 +1,12 @@
 ---
-title: vLLM Setup
+title: vLLM Setup - Linux
 date: '2026-04-09'
 ---
 
-# vLLM Setup
+I just tried vLLM for the first time, I normally use LM-Studio, and MAN it's wildly fast.
+I'm back to LM-Studio because of Gemma-4 tool loops in vLLM (and lmstudio actually) but I can't get my good old standby qwen3.5-35b-a3b to run in vLMM so I'll just wait it out for things to update and settle down.
 
+Anyway, the install is super easy:
 
 ### 1. Install System Dependencies
 You need the Python 3.13 development headers so vLLM can compile its custom CUDA kernels on the fly without crashing.
@@ -48,7 +50,8 @@ vllm serve cyankiwi/gemma-4-26B-A4B-it-AWQ-4bit \
 ```
 
 if you want to specify a config file, also add:
---chat-template ./gemma-4_think.jinja \
+```--chat-template ./gemma-4_think.jinja \```
+But know that it will use a defaul one if you don't specify anything.
 
 ## To update it after the fact
 Most find it easier to just make a new .env and install it fresh there, make sure it works, then blow away the old one.
