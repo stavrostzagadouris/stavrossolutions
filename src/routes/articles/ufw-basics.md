@@ -50,6 +50,20 @@ To allow a specific IP address :
 ```bash
 sudo ufw allow from 192.168.1.30
 ```
+
+### Deleting Rules
+If you need to remove a rule, it is easiest to do so by its number. First, list your rules with their numbers:
+```bash
+sudo ufw status numbered
+```
+Once you have the number of the rule you wish to remove, use the delete command:
+```bash
+sudo ufw delete [number]
+```
+*Example: `sudo ufw delete 2`*
+
+**Note:** Delete rules one at a time, as the numbering shifts after each deletion.
+
 ## Checking your Work
 
 ### To see what is currently allowed and if the firewall is active:
@@ -61,7 +75,6 @@ sudo ufw status verbose
 ```bash
 sudo ufw status numbered
 ```
-Once they are numbered, you can just delete by the number: `sudo ufw delete 2` (don't try to delete more than one at a time)
 
 ## The "Panic Button" (Reset)
 
