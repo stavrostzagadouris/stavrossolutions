@@ -79,4 +79,4 @@ Open WSL normally — it should log in as your user now. Everything should be in
 Remove-Item D:\wsl_backup.tar
 ```
 
-That's it. WSL's living on your D drive now and your NVMe can breathe again.
+There! Done.
