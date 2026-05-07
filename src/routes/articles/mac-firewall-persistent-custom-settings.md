@@ -3,8 +3,6 @@ title: Mac Firewall - Persistent Custom Settings
 date: '2026-05-07'
 ---
 
-# Mac Firewall - Persistent Custom Settings
-
 macOS uses **PF (Packet Filter)** as its default firewall system. While the "Stealth Mode" in System Settings is fine for basic users, power users often need custom rules for port forwarding, specific IP blocking, or network lab environments.
 
 My usecase was, I wanted to lock a Mac down to only be reachable from my Tailscale network.
