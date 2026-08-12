@@ -6,7 +6,6 @@ date: '2026-08-11'
 ---
 
 I needed to start a VM from terminal today and I thought I better write down how I did that for myself for later. 
-At the same time, why not have a huge cheatsheet!
 
 ## Quick Reference Cheat Sheet
 
