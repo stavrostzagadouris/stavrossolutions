@@ -5,6 +5,8 @@ date: '2026-11-05'
 
 ---
 
+![ptop running on Windows](/img/ptop-windows.png "ptop on Windows")
+
 So lately I've been enjoying btop on linux, but then I work from my Windows computer sometimes and don't have the same tooling. There is a btop for windows but it requires admin to read GPU and such.
 
 I was testing out Gemini Argon in antigravity, asking it for the best btop alternative and it never really found one I wanted. So I said 'well actually.... you know what I want, just make me something?'.
@@ -21,14 +23,13 @@ Argon made ptop.
 Opus made shtop.
 I get to benefit.
 
-You can too if you want! Check them out below and there's a pic of how nice it looks. There are themes too, Argon just did that itself-what-the-heck!
+You can too if you want! There are themes too, Argon just did that itself-what-the-heck!
 
 The little 'install' files just add the command to your alias and point to the git repo.
 
-**[ptop](https://github.com/stavrostzagadouris/powershellTop)** is a btop-style system monitor for Windows. It's a single standalone PowerShell script — no install, no admin, no dependencies — that shows CPU, RAM, disks, network and processes, plus full GPU telemetry (core %, VRAM, power, temp, fan, clocks).
+**[ptop](https://github.com/stavrostzagadouris/powershellTop)**
 
-**[shtop](https://github.com/stavrostzagadouris/shelltop)** is the Linux twin. Same layout, themes and keys, but a single dependency-free Python 3 script that reads `/proc` and `/sys` directly, so no root, no daemons, nothing to install either.
+**[shtop](https://github.com/stavrostzagadouris/shelltop)**
 
-![ptop running on Windows](/img/ptop-windows.png "ptop on Windows")
 
 Till next time.
